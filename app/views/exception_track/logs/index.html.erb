@@ -21,7 +21,7 @@
 <% if @logs.blank? %>
   <div class="no-record">No exceptions.</div>
 <% else %>
-  <%= paginate @logs %>
+  <%= paginate @logs, theme: "exception-track" %>
 
   <table class="table table-borded tabl">
     <thead>
@@ -43,5 +43,5 @@
     </tbody>
   </table>
 
-  <%= paginate @logs %>
+  <%= paginate @logs, theme: "exception-track" %>
 <% end %>
